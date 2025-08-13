@@ -36,4 +36,5 @@ h1 {
 
 .photo-hover:hover {
   content: url("/marc-vila.png");
+  cursor: grab;
 }
