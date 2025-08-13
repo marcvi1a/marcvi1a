@@ -3,6 +3,14 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
+
+  color: #171A1C;
+  background-color: #ECE8E3;
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
 }
 
 .photo-hover {
