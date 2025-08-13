@@ -4,8 +4,17 @@ body {
   margin: 0 auto;
   padding: 0 2rem;
 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  
   color: #171A1C;
   background-color: #ECE8E3;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .social-buttons svg {
