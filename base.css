@@ -25,22 +25,6 @@ h1 {
   color: #171A1C;
 }
 
-.photo img {
-  width: 400px;
-  height: 400px;
-}
-
-.photo-hover {
-  content: url("/marc-vila_ai.png");
-  width: 400px;
-  height: 400px;
-}
-
-.photo-hover:hover {
-  content: url("/marc-vila.png");
-  cursor: grab;
-}
-
 .photo-hover-container {
   cursor: grab;
 }
