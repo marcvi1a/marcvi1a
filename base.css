@@ -48,7 +48,7 @@ h1 {
 }
 
 .photo-content {
-  flex: 0 0 350px; /* fixed width for photo container */
+  flex: 0 0 375px; /* fixed width for photo container */
   max-width: 100%;
 }
 
@@ -79,8 +79,8 @@ h1 {
 .photo-hover {
   position: absolute;
   top: 0; left: 0;
-  width: 350px;
-  height: 350px;
+  width: 375px;
+  height: 375px;
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
