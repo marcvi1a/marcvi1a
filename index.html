@@ -54,7 +54,7 @@
   <p>I'm a <span id="age"></span> years old man from Barcelona.</p>
 
   <br>
-  <p>More important than reading this page is for you to watch the <a href="http://youtu.be/4x2KFllOFro" target="_blank">pale blue dot video</a>.</p>
+  <p>More important than reading this page is for you to watch the <a href="http://youtu.be/4x2KFllOFro">pale blue dot video</a>.</p>
   <p>So anything and everything you decide to do with your life, enjoy it.</p>
 
   <br>
@@ -62,9 +62,9 @@
   <p>I don't want them to be the biggest, but I strive for them to be the brightest.</p>
 
   <br>
-  <p><a href="https://gelohealth.com.br/" title="Gelo Health banheira de gelo" target="_blank">Gelo Health</a> designs, manufacturers, and commercialices the best ice baths. I got the idea from My First Million.</p>
-  <p><a href="https://kontrast.com.br/" title="Kontrast sauna, gelo e respiração" target="_blank">Kontrast</a> offers social self-care through curated rituals. I got the idea from a woman. I offered her to partner up. She didn't accept.</p>
-  <p>See more details of my professional journey on <a href="https://www.linkedin.com/in/marcvi1a/" title="Marc Vila on LinkedIn" target="_blank">LinkedIn</a>.</p>
+  <p><a href="https://gelohealth.com.br/" title="Gelo Health banheira de gelo">Gelo Health</a> designs, manufacturers, and commercialices the best ice baths. I got the idea from <a href="https://x.com/myfirstmilpod">My First Million</a>.</p>
+  <p><a href="https://kontrast.com.br/" title="Kontrast sauna, gelo e respiração">Kontrast</a> offers social self-care through curated rituals. I got the idea from a woman. I offered her to partner up. She didn't accept.</p>
+  <p>See more details of my professional journey on <a href="https://www.linkedin.com/in/marcvi1a/" title="Marc Vila on LinkedIn">LinkedIn</a>.</p>
 
   <br>
   <p>I really don't pay attention to what anybody might think of me.</p>
@@ -72,15 +72,15 @@
 
   <br>
   <p>Do you want to know what my brain thinks?</p>
-  <p>Read on <a href="https://x.com/marcvi1a" title="Marc Vila on X" target="_blank">X</a>.</p>
+  <p>Read on <a href="https://x.com/marcvi1a" title="Marc Vila on X">X</a>.</p>
 
   <br>
   <p>Do you want to see what my eyes see?</p>
-  <p>Watch on <a href="https://www.instagram.com/marcvi1a/" title="Marc Vila on Instagram" target="_blank">Instagram</a>.</p>
+  <p>Watch on <a href="https://www.instagram.com/marcvi1a/" title="Marc Vila on Instagram">Instagram</a>.</p>
 
   <br>
   <p>Do you want to hang out with me?</p>
-  <p>Listen to <a href="https://x.com/juntaimprovisad" title="Junta Improvisada" target="_blank">Junta Improvisada</a> (SPANISH).</p>
+  <p>Listen to <a href="https://x.com/juntaimprovisad" title="Junta Improvisada">Junta Improvisada</a> (SPANISH).</p>
 
   <br>
   <p>A few years ago I barely spoke 1 language.</p>
@@ -108,6 +108,9 @@
   <script>
     document.getElementById('age').textContent = new Date().getFullYear() - 1990;
     document.getElementById('y').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.setAttribute('target', '_blank');
+    });
   </script>
 </body>
 
