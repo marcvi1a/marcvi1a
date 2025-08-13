@@ -26,7 +26,7 @@ h1 {
 }
 
 .photo-hover-container {
-  cursor: grab;
+  cursor: wait;
 }
 
 .photo-hover {
@@ -48,4 +48,16 @@ h1 {
 
 .photo-hover-container:hover .base-image {
   opacity: 0;
+}
+
+.hover-caption {
+  display: none;
+}
+
+.photo-hover-container:hover + .base-caption {
+  display: none;
+}
+
+.photo-hover-container:hover + .base-caption + .hover-caption {
+  display: block;
 }
