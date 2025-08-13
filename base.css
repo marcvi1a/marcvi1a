@@ -2,12 +2,12 @@
 body {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  
+
   color: #171A1C;
   background-color: #ECE8E3;
 }
