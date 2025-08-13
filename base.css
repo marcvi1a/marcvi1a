@@ -25,6 +25,39 @@ h1 {
   color: #171A1C;
 }
 
+content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem; /* space between photo and text */
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.text-content {
+  flex: 1 1 300px; /* flexible width, minimum 300px */
+  min-width: 280px;
+}
+
+.photo-content {
+  flex: 0 0 400px; /* fixed width for photo container */
+  max-width: 100%;
+}
+
+/* Responsive: On smaller screens stack vertically */
+@media (max-width: 749px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .photo-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .photo-hover-container {
   cursor: wait;
 }
