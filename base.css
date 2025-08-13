@@ -19,12 +19,6 @@ h1 {
   line-height: 1rem;
 }
 
-footer, .caption {
-  color: #999;
-  font-size: 0.75rem;
-  font-style: italic;
-}
-
 .social-buttons svg {
   width: 4rem;
   height: 4rem;
@@ -54,6 +48,15 @@ footer, .caption {
 
 .photo-hover-container:hover .base-image {
   opacity: 0;
+}
+
+footer, .caption {
+  color: #999;
+  font-size: 0.75rem;
+}
+
+.caption {
+  font-style: italic;
 }
 
 .hover-caption {
