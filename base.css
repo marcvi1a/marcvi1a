@@ -14,7 +14,9 @@ body {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 1rem;
 }
 
 .social-buttons svg {
@@ -37,4 +39,29 @@ h1 {
 .photo-hover:hover {
   content: url("/marc-vila.png");
   cursor: grab;
+}
+
+.photo-hover-container {
+  cursor: grab;
+}
+
+.photo-hover {
+  position: absolute;
+  top: 0; left: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.hover-image {
+  opacity: 0;
+}
+
+.photo-hover-container:hover .hover-image {
+  opacity: 1;
+}
+
+.photo-hover-container:hover .base-image {
+  opacity: 0;
 }
