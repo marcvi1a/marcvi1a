@@ -37,6 +37,10 @@ h1 {
   color: #999;
 }
 
+.social-buttons a {
+  text-decoration: none;
+}
+
 .social-buttons svg {
   width: 1.25rem;
   height: 1.25rem;
