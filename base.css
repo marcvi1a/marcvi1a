@@ -1,4 +1,9 @@
 
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 .photo-hover {
   content: url("/marc-vila_ai.png");
