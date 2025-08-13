@@ -91,6 +91,7 @@ h1 {
 @media (max-width: 749px) {
   .content-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 
@@ -104,6 +105,7 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 400px;
+  aspect-ratio: 1 / 1; /* maintain square */
   margin: 0 auto;
 }
 
