@@ -95,6 +95,14 @@ h1 {
     gap: 2rem;
   }
 
+  photo-content {
+    margin-top: 2rem;
+  }
+
+  text-content {
+    margin-top: -1rem;
+  }
+
   p {
     line-height: 2rem;
   }
