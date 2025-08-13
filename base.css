@@ -95,11 +95,11 @@ h1 {
     gap: 2rem;
   }
 
-  photo-content {
+  .photo-content {
     margin-top: 2rem;
   }
 
-  text-content {
+  .text-content {
     margin-top: -1rem;
   }
 
@@ -108,7 +108,7 @@ h1 {
   }
 
   .caption {
-    line-height: 1.5rem;    
+    line-height: 1.5rem;
   }
 }
 
