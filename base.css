@@ -28,6 +28,7 @@ h1 {
 
 content-wrapper {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem; /* space between photo and text */
@@ -41,8 +42,14 @@ content-wrapper {
 }
 
 .photo-content {
-  flex: 0 0 400px; /* fixed width for photo container */
+  flex: 0 0 200px; /* fixed width for photo container */
   max-width: 100%;
+}
+
+@media (min-width: 750px) {
+  .photo-content {
+    margin: -4rem 0 0 2rem;
+  }
 }
 
 /* Responsive: On smaller screens stack vertically */
