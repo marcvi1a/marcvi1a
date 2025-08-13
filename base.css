@@ -89,6 +89,11 @@ h1 {
 
 
 @media (max-width: 749px) {
+  .content-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
   p {
     line-height: 2rem;
   }
@@ -99,14 +104,15 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 400px;
-  height: auto;
+  margin: 0 auto;
 }
 
 .photo-hover {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
