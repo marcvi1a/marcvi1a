@@ -97,13 +97,17 @@ h1 {
 
 .photo-hover-container {
   cursor: wait;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .photo-hover {
   position: absolute;
   top: 0; left: 0;
-  width: 400px;
-  height: 400px;
+  width: 100%;;
+  height: auto;
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
