@@ -1,10 +1,8 @@
 header {
   position: sticky;
   top: 0;
-  background-color: white; /* Or your desired background */
-  z-index: 1000; /* Make sure it stays on top */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
-  padding: 1rem;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 body {
