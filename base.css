@@ -4,7 +4,6 @@ header {
   z-index: 100;
   padding: 1rem 0;
   background-color: #ECE8E3;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 body {
@@ -56,7 +55,13 @@ h1 {
 
 @media (min-width: 750px) {
   .photo-content {
-    margin: -4rem 0 0 2rem;
+    margin: -2rem 0 0 2rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 2rem 0;
+    background-color: #ECE8E3;
   }
 }
 
