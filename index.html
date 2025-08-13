@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,90 +8,100 @@
   <meta name="description" content="Marc Vila" />
   <link rel="stylesheet" href="base.css">
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="avatar" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=320&auto=format&fit=crop" alt="Profile" />
-      </div>
-      <div class="hgroup">
-        <div class="name">Marc Vila</div>
-        <div class="tag">Businessman · Producer</div>
-      </div>
-      <nav class="btns" aria-label="Social">
-        <a class="iconbtn" href="#" aria-label="X / Twitter" title="X / Twitter">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h3l-7 9 8 11h-6l-5-7-6 7H2l8-9L2 2h6l5 7 5-7z"/></svg>
-        </a>
-        <a class="iconbtn" href="#" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05C21.14 8.45 23 10.5 23 14.3V23h-4v-7.6c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 4v7.7h-4V8.5z"/></svg>
-        </a>
-      </nav>
-    </header>
 
-    <div class="hero" role="region" aria-label="Introduction">
-      <p>
-        I partner with enterprise founders as an angel investor and advisor, after co‑founding and serving as CTO at a category‑leading observability company that later joined a global technology group. My background spans a PhD in computer science and publications in Internet measurement.
-      </p>
-    </div>
+  <header>
+    <h1>Marc Vila</h1>
+    <p>Businessman</p>
+    <nav class="socials" aria-label="Marc Vila socials">
+      <a class="button" href="https://x.com/marcvi1a" aria-label="Marc Vila on X" title="Marc Vila on X">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 2h3l-7 9 8 11h-6l-5-7-6 7H2l8-9L2 2h6l5 7 5-7z"/>
+        </svg>
+      </a>
+      <a class="button" href="https://www.instagram.com/marcvi1a/" aria-label="Marc Vila on Instagram" title="Marc Vila on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <path d="M17.5 6.5h.01"/>
+        </svg>
+      </a>
+      <a class="button" href="https://www.linkedin.com/in/marcvi1a/" aria-label="Marc Vila on LinkedIn" title="Marc Vila on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
 
-    <div class="grid">
-      <section class="card" aria-labelledby="invest">
-        <h2 id="invest">Angel investing & advising</h2>
-        <p>
-          I typically work with teams building core infrastructure, security, and systems software with deep technical moats. Ways I help include:
-        </p>
-        <ul class="list">
-          <li>Hiring and scaling product/engineering organizations</li>
-          <li>Product strategy and go‑to‑market alignment</li>
-          <li>Technical sounding board and roadmap reviews</li>
-          <li>Fundraising strategy and narrative</li>
-        </ul>
-      </section>
-
-      <figure class="cover">
-        <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=1400&auto=format&fit=crop" alt="Mountains and stars" />
-        <figcaption>Exploration, nature, and lifelong learning.</figcaption>
-      </figure>
-    </div>
-
-    <section class="card" aria-labelledby="bio">
-      <h2 id="bio">Background</h2>
-      <p>
-        Before industry, I focused my research on the structure of the Internet at scale, including work on routing security and network measurement. Earlier, I completed an electrical engineering degree.
-      </p>
-      <div class="cols" role="list">
-        <div class="pill" role="listitem">PhD · Computer Science</div>
-        <div class="pill" role="listitem">20+ peer‑reviewed papers</div>
-        <div class="pill" role="listitem">Created one of the first BGP hijack monitors</div>
-        <div class="pill" role="listitem">Co‑founded a category leader</div>
-        <div class="pill" role="listitem">Acquired by a Fortune 100</div>
-        <div class="pill" role="listitem">Advisor to founders</div>
-      </div>
-    </section>
-
-    <section class="card" aria-labelledby="causes">
-      <h2 id="causes">Causes & philanthropy</h2>
-      <p>Areas I care deeply about include:</p>
-      <ul class="list">
-        <li>Climate action</li>
-        <li>Wildlife conservation</li>
-        <li>Child education and opportunity</li>
-      </ul>
-      <p>Also supportive of community initiatives in Brazil and Portugal.</p>
-    </section>
-
-    <footer>
-      <div>© <span id="y"></span> Ricardo Oliveira</div>
-      <div class="anchors" aria-label="Page anchors">
-        <a class="anchor" href="#invest">Investing</a>
-        <a class="anchor" href="#bio">Background</a>
-        <a class="anchor" href="#causes">Causes</a>
-      </div>
-    </footer>
+  <div class="photo">
+    <img src="" alt="Marc Vila">
+    <p>Picture taken when I was 30 years old in Bogotá on ‎April 9, ‎2020.</p>
+    <p>Picture adjusted by one of the first iterations of AI on January 14, ‎2023.</p>
   </div>
 
+  <p>I'm a <span id="age"></span> years old man from Barcelona.</p>
+
+  <br>
+  <p>More important than reading this page is for you to watch the <a href="http://youtu.be/4x2KFllOFro" target="_blank">pale blue dot video</a>.</p>
+  <p>So anything and everything you decide to do with your life, enjoy it.</p>
+
+  <br>
+  <p>I'm an introverted who cares to get things done.</p>
+  <p>I don't want them to be the biggest, but I strive for them to be the brightest.</p>
+
+  <br>
+  <p><a href="https://gelohealth.com.br/" title="Gelo Health banheira de gelo" target="_blank">Gelo Health</a> designs, manufacturers, and commercialices the best ice baths. I got the idea from My First Million.</p>
+  <p><a href="https://kontrast.com.br/" title="Kontrast sauna, gelo e respiração" target="_blank">Kontrast</a> offers social self-care through curated rituals. I got the idea from a woman. I offered her to partner up. She didn't accept.</p>
+  <p>See more details of my professional journey on <a href="https://www.linkedin.com/in/marcvi1a/" title="Marc Vila on LinkedIn" target="_blank">LinkedIn</a>.</p>
+
+  <br>
+  <p>I really don't pay attention to what anybody might think of me.</p>
+  <p>It hasn't always been this way. But believe me, it's liberating.</p>
+
+  <br>
+  <p>Do you want to have a sneak peak of my brain? Read on <a href="https://x.com/marcvi1a" title="Marc Vila on X" target="_blank">X</a>.</p>
+  <p>Do you want to see what my eyes see? Watch on <a href="https://www.instagram.com/marcvi1a/" title="Marc Vila on Instagram" target="_blank">Instagram</a>.</p>
+
+  <br>
+  <p>Do you want to hang out with me? Listen to <a href="https://x.com/juntaimprovisad" title="Junta Improvisada" target="_blank">Junta Improvisada</a> (SPANISH).</p>
+
+  <br>
+  <p>A few years ago I barely spoke 1 language.</p>
+  <p>Today somehow I'm able to communicate in Catalan, Spanish, English, and Portuguese.</p>
+
+  <br>
+  <p>Fitness hacks:</p>
+  <p>1. Eat less</p>
+  <p>2. Stretch</p>
+  <p>3. Sweat</p>
+  <p>3. Pull ups everyday</p>
+
+  <br>
+  <p>A dream of mine. Be a father.</p>
+
+  <br>
+  <p>If for any strange reason you want to speak to me, do not text me.</p>
+  <p>Do not call me.</p>
+  <p>Move your ass and meet me wherever I might be.</p>
+
+  <footer>
+    <div>© <span id="y"></span> Marc Vila</div>
+  </footer>
+
   <script>
+    document.getElementById('age').textContent = new Date().getFullYear() - 1990;
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
