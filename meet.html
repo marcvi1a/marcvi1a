@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Redirecting…</title>
-  <script>
-    // Open Koalendar in a new tab
-    window.open("https://koalendar.com/e/marcvi1a-30", "_blank");
-
-    // Redirect current tab back to homepage
-    window.location.href = "/";
-  </script>
 </head>
 <body>
-  <p>Meet with Marc</p>
+  <p>Redirecting… If nothing happens, <a id="link" href="https://koalendar.com/e/marcvi1a-30" target="_blank">click here</a>.</p>
+
+  <script>
+    // Delay slightly to let the browser process it as navigation
+    setTimeout(function() {
+      window.open("https://koalendar.com/e/marcvi1a-30", "_blank");
+      window.location.href = "/";
+    }, 100);
+  </script>
 </body>
 </html>
