@@ -8,12 +8,24 @@
   <meta name="description" content="Marc Vila" />
   <link rel="icon" type="image/png" href="marc-vila_ai.png">
   <link rel="stylesheet" href="base.css">
+  <script>
+    (function() {
+      var s = localStorage.getItem('theme');
+      if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches))
+        document.documentElement.classList.add('dark');
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch">
+    <label for="theme-switch" aria-label="Toggle dark mode"></label>
+  </div>
 
   <header>
     <h1>Marc Vila</h1>
@@ -137,6 +149,22 @@
     document.getElementById('y').textContent = new Date().getFullYear();
     document.querySelectorAll('a[href]').forEach(link => {
       link.setAttribute('target', '_blank');
+    });
+
+    // Dark mode toggle
+    const toggle = document.getElementById('theme-switch');
+    const root = document.documentElement;
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (stored === 'dark' || (!stored && prefersDark)) {
+      root.classList.add('dark');
+      toggle.checked = true;
+    }
+
+    toggle.addEventListener('change', () => {
+      root.classList.toggle('dark', toggle.checked);
+      localStorage.setItem('theme', toggle.checked ? 'dark' : 'light');
     });
   </script>
 </body>
