@@ -40,8 +40,14 @@ h1 {
 .sub-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
   margin-top: -1rem;
+}
+
+.sub-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 a {
@@ -50,10 +56,6 @@ a {
 
 .sub-header p {
   color: var(--color-muted);
-}
-
-.sub-header {
-  justify-content: flex-start;
 }
 
 .social-buttons a {
