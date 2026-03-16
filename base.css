@@ -44,8 +44,16 @@ h1 {
   margin-top: -1rem;
 }
 
+a {
+  color: inherit;
+}
+
 .sub-header p {
   color: var(--color-muted);
+}
+
+.sub-header {
+  justify-content: flex-start;
 }
 
 .social-buttons a {
@@ -178,17 +186,7 @@ footer, .caption {
 
 /* Dark mode toggle */
 .theme-toggle {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 200;
-}
-
-@media (max-width: 749px) {
-  .theme-toggle {
-    top: 1rem;
-    right: 1rem;
-  }
+  margin-left: auto;
 }
 
 .theme-toggle input {
