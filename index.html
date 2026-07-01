@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marc Vila</title>
   <meta name="description" content="Marc Vila" />
-  <link rel="icon" type="image/png" href="marc-vila_ai.png">
+  <link rel="icon" type="image/webp" href="marc-vila_ai.webp">
   <link rel="stylesheet" href="base.css">
   <script>
     (function() {
@@ -63,8 +63,8 @@
       </nav>
       </div>
       <div class="theme-toggle">
-        <input type="checkbox" id="theme-switch">
-        <label for="theme-switch" aria-label="Toggle dark mode"></label>
+        <input type="checkbox" id="theme-switch" aria-label="Toggle dark mode">
+        <label for="theme-switch"></label>
       </div>
     </div>
   </header>
@@ -73,8 +73,8 @@
 
     <div class="photo-content">
       <div class="photo-hover-container">
-        <img src="/marc-vila_ai.png" alt="Marc Vila" class="photo-hover base-image" />
-        <img src="/marc-vila.png" alt="Marc Vila" class="photo-hover hover-image" />
+        <img src="marc-vila_ai.webp" alt="Marc Vila" class="photo-hover base-image" />
+        <img src="marc-vila.webp" alt="Marc Vila" class="photo-hover hover-image" />
       </div>
       <p class="caption base-caption">Picture adjusted by an early iteration of AI on January 14, ‎2023.</p>
       <p class="caption hover-caption">Picture taken when I was 30 years old in Bogotá on ‎April 9, ‎2020.</p>
@@ -142,8 +142,15 @@
   </div>
 
   <script>
-    document.getElementById('age').textContent = new Date().getFullYear() - 1990;
-    document.getElementById('y').textContent = new Date().getFullYear();
+    const birthday = new Date(1990, 6, 27); // July 27, 1990 (month is 0-indexed)
+    const now = new Date();
+    let age = now.getFullYear() - birthday.getFullYear();
+    const hasHadBirthday =
+      now.getMonth() > birthday.getMonth() ||
+      (now.getMonth() === birthday.getMonth() && now.getDate() >= birthday.getDate());
+    if (!hasHadBirthday) age--;
+    document.getElementById('age').textContent = age;
+    document.getElementById('y').textContent = now.getFullYear();
     document.querySelectorAll('a[href]').forEach(link => {
       link.setAttribute('target', '_blank');
     });

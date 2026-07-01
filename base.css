@@ -183,7 +183,12 @@ footer, .caption {
 
 /* Dark mode toggle */
 .theme-toggle input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
 }
 
 .theme-toggle label {
@@ -213,7 +218,7 @@ footer, .caption {
   transform: translateX(18px);
 }
 
-.theme-toggle label:focus-visible {
+.theme-toggle input:focus-visible + label {
   outline: 2px solid var(--color-text);
   outline-offset: 2px;
 }
