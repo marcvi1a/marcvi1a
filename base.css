@@ -43,12 +43,13 @@ p, li, footer {
 /* the fitness hacks act out their words */
 .stretch {
   display: inline-block;
-  transform: scaleX(4);
+  transform: scaleX(6); /* only the e is pulled, the ends hold */
   transform-origin: left center;
+  margin: 0 2.8em 0 -0.2em; /* room for 5 more widths of the e (0.6045em in Montserrat), less its scaled side bearings */
 }
 
 .grow {
-  line-height: 1;
+  line-height: 0; /* the big letters rise above the line instead of pushing it down, so item 3 keeps the list's spacing */
 }
 
 @media (max-width: 749px) {
