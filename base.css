@@ -41,16 +41,16 @@ p, li, footer {
 }
 
 /* the fitness hacks act out their words */
-/* each gap of the word opens a moment after the one before it, the middle ones a little wider: a ripple, not a slide */
+/* each gap of the word opens a moment after the one before it: a ripple, not a slide */
 .stretch span {
   display: inline-block;
-  animation: stretch 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation: stretch 7s cubic-bezier(0.37, 0, 0.63, 1) infinite;
   animation-delay: var(--d);
 }
 
 @keyframes stretch {
   0%, 10% { transform: none; }
-  50%, 62% { transform: translateX(var(--a)); }
+  50%, 62% { transform: translateX(1em); }
   100% { transform: none; }
 }
 
