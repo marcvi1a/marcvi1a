@@ -43,13 +43,27 @@ p, li, footer {
 /* the fitness hacks act out their words */
 .stretch {
   display: inline-block;
-  transform: scaleX(6); /* only the e is pulled, the ends hold */
   transform-origin: left center;
-  margin: 0 2.8em 0 -0.2em; /* room for 5 more widths of the e (0.6045em in Montserrat), less its scaled side bearings */
+  animation: stretch 4s ease-in-out infinite;
 }
 
-.grow {
-  line-height: 0; /* the big letters rise above the line instead of pushing it down, so item 3 keeps the list's spacing */
+@keyframes stretch {
+  0%, 15% { transform: scaleX(1); }
+  50%, 65% { transform: scaleX(3); }
+  100% { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stretch { animation: none; }
+}
+
+/* every letter hangs from the line's x-height and grows downward: in Montserrat the x-height top sits 0.33em below an inline box of line-height 1, and 0.58rem below the top of a 1.5rem line */
+.grow span {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  position: relative;
+  top: calc(0.58rem - 0.33em);
 }
 
 @media (max-width: 749px) {
