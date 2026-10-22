@@ -25,6 +25,15 @@ body {
   transition: color 0.2s, background-color 0.2s;
 }
 
+/* the blank line a <br> leaves between blocks is set by the column, the text keeps its own leading */
+.text-content {
+  line-height: 0.5rem;
+}
+
+p, footer {
+  line-height: 1.5rem;
+}
+
 @media (max-width: 749px) {
   body  {
     padding: 2rem 1rem;
