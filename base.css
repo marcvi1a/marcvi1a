@@ -42,15 +42,13 @@ p, li, footer {
 
 /* the fitness hacks act out their words */
 .stretch {
-  display: inline-block;
-  transform-origin: left center;
-  animation: stretch 4s ease-in-out infinite;
+  animation: stretch 4s ease-in-out infinite; /* the letters drift apart to about 3x the word's length and back */
 }
 
 @keyframes stretch {
-  0%, 15% { transform: scaleX(1); }
-  50%, 65% { transform: scaleX(3); }
-  100% { transform: scaleX(1); }
+  0%, 15% { letter-spacing: 0; }
+  50%, 65% { letter-spacing: 1em; }
+  100% { letter-spacing: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
