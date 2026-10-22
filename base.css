@@ -40,6 +40,17 @@ p, li, footer {
   list-style-position: inside;
 }
 
+/* the fitness hacks act out their words */
+.stretch {
+  display: inline-block;
+  transform: scaleX(3);
+  transform-origin: left center;
+}
+
+.grow {
+  line-height: 1;
+}
+
 @media (max-width: 749px) {
   body  {
     padding: 2rem 1rem;
