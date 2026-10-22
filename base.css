@@ -27,7 +27,7 @@ body {
 
 /* the blank line a <br> leaves between blocks is set by the column, the text keeps its own leading */
 .text-content {
-  line-height: 0.5rem;
+  line-height: 0.75rem;
 }
 
 p, footer {
