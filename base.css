@@ -43,7 +43,7 @@ p, li, footer {
 /* the fitness hacks act out their words */
 .stretch {
   display: inline-block;
-  transform: scaleX(3);
+  transform: scaleX(4);
   transform-origin: left center;
 }
 
