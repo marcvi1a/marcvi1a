@@ -166,6 +166,19 @@ a {
     margin-top: 2rem;
   }
 
+  /* one left edge for everything on phones: the photo fills the column, and the title and the X icon move by their built-in side spacing so their ink starts where the body text's does (Montserrat capitals 0.109em in, Poppins M 0.063em, the X icon's stroke 1/24 of its width) */
+  .photo-content .photo-hover-container {
+    max-width: none;
+  }
+
+  h1 {
+    margin-left: calc(0.109rem - 0.063em);
+  }
+
+  .social-buttons {
+    margin-left: calc(0.109rem - 1.25rem / 24);
+  }
+
   .text-content {
     margin-top: -1rem;
   }
