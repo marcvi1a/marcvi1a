@@ -41,27 +41,33 @@ p, li, footer {
 }
 
 /* the fitness hacks act out their words */
-.stretch {
-  animation: stretch 4s ease-in-out infinite; /* the letters drift apart to about 3x the word's length and back */
+/* each gap of the word opens a moment after the one before it, the middle ones a little wider: a ripple, not a slide */
+.stretch span {
+  display: inline-block;
+  animation: stretch 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  animation-delay: var(--d);
 }
 
 @keyframes stretch {
-  0%, 15% { letter-spacing: 0; }
-  50%, 65% { letter-spacing: 1em; }
-  100% { letter-spacing: 0; }
+  0%, 10% { transform: none; }
+  50%, 62% { transform: translateX(var(--a)); }
+  100% { transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .stretch { animation: none; }
+  .stretch span { animation: none; }
 }
 
-/* every letter hangs from the line's x-height and grows downward: in Montserrat the x-height top sits 0.33em below an inline box of line-height 1, and 0.58rem below the top of a 1.5rem line */
-.grow span {
+/* every letter hangs from the x-height of the line and grows downward. Each one drops by the difference between its own x-height and that of 1rem text (0.531em in Montserrat), measured from the shared baseline, so the font's rounded metrics never come into it. */
+.grow {
   display: inline-block;
-  vertical-align: top;
-  line-height: 1;
+  padding-bottom: 1rem; /* the room the hanging letters take below the line */
+}
+
+.grow span {
   position: relative;
-  top: calc(0.58rem - 0.33em);
+  top: calc(0.531em - 0.531rem);
+  line-height: 0;
 }
 
 @media (max-width: 749px) {
